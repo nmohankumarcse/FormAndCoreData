@@ -2,7 +2,7 @@
 //  FormAndCoreDataUITests.swift
 //  FormAndCoreDataUITests
 //
-//  Created by N., Mohankumar (Cognizant) on 19/01/21.
+
 //
 
 import XCTest

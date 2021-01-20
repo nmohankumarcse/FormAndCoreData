@@ -18,15 +18,15 @@ enum SortType : String, Identifiable,CaseIterable{
 
 class GarmentViewModel{
     private var viewContext = PersistenceController.shared.container.viewContext
-    @Published var selection : String = SortType.alpha.rawValue{
+   var selection : String = SortType.alpha.rawValue{
         didSet{
             refreshData()
         }
     }
-    @Published var currentGarmentName : String = ""
-    @Published var errorMessage : String = ""
-    @Published var isInvalidName : Bool = false
-    @Published var garments: [Garment] = []
+    var currentGarmentName : String = ""
+    var errorMessage : String = ""
+    var isInvalidName : Bool = false
+    var garments: [Garment] = []
     private var garmentResults: NSFetchedResultsController<Garment>?
 //    var garments: FetchedResults<Garment> { fetchRequest.wrappedValue }
     
